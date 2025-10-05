@@ -1,20 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJ store</title>
-    <link rel="stylesheet" href="store.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpenter & Interior Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="new icon.png"rel="icon">
 </head>
 <body>
-    <h1>Welcome to My Company</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="service.html">Services</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-    <p>Your trusted partner in business solutions.</p>
-</body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav">
+            <h2>WoodCraft</h2>
+            <nav class="nav__links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#values">Values</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="navbar-toggle" onclick="shownav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- side nav bar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenav()"><i class="fa-solid fa-xmark"></i> </p>
+        <nav class="side-nav__links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#values">Values</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>We Craft Furniture with Passion</h1>
+            <p>Designing and creating unique pieces like tables, cabinets, and built-in shelving, tailored to client
+                needs.</p>
+            <a href="#contact" class="btn btn--primary">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container about__content">
+            <div>
+                <h2>About Us</h2>
+                <p>With decades of craftsmanship, our team delivers bespoke interiors and furniture, ensuring every
+                    detail aligns with your vision.</p>
+                <div class="about__stats">
+                    <div class="about__stat">
+                        <h3>30+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="about__stat">
+                        <h3>100+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+            </div>
+            <img src="https://picsum.photos/500/400?carpenter" alt="Carpenter at work" />
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="grid services__grid">
+                <div class="service">
+                    <img src="https://picsum.photos/400/300?bedroom" alt="Bedroom Design" />
+                    <div class="service__title">Bedroom</div>
+                </div>
+                <div class="service">
+                    <img src="https://picsum.photos/400/301?kitchen" alt="Kitchen Design" />
+                    <div class="service__title">Kitchen</div>
+                </div>
+                <div class="service">
+                    <img src="https://picsum.photos/400/302?furniture" alt="Furniture Design" />
+                    <div class="service__title">Furniture</div>
+                </div>
+                <div class="service">
+                    <img src="https://picsum.photos/400/303?cabinet" alt="Cabinet Design" />
+                    <div class="service__title">Cabinetry</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section id="values">
+        <div class="container">
+            <h2>Our Values</h2>
+            <div class="grid values__grid">
+                <div class="value">
+                    <h4>High Precision</h4>
+                    <p>Every cut measured twice for perfection.</p>
+                </div>
+                <div class="value">
+                    <h4>Eco Friendly</h4>
+                    <p>Sustainable wood and responsible processes.</p>
+                </div>
+                <div class="value">
+                    <h4>Custom Design</h4>
+                    <p>Every project tailored uniquely to you.</p>
+                </div>
+                <div class="value">
+                    <h4>Client Oriented</h4>
+                    <p>We prioritize transparency and satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Ready to bring your vision to life? Get in touch for a consultation today.</p>
+            <a href="mailto:info@woodcraft.com" class="btn btn--outline">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 WoodCraft. All rights reserved.</p>
+        <nav class="social">
+	<a href="http://facebook.com"> <img src="fb.png"></a>
+	<a href="http://instagram.com"> <img src="insta.png"></a>
+	<a href="http://twitter.com"> <img src="twi.png"></a>
+  </nav>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
