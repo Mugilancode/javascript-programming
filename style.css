@@ -107,7 +107,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(68, 51, 25, 0.25) 0px 30px 60px -12px inset, rgba(7, 7, 7, 0.3) 0px 18px 36px -18px inset;
 }
 
 .nav {
@@ -117,7 +117,6 @@ header {
     padding: 1rem 0;
 
 }
-
 .navbar-toggle {
     display: none;
 }
@@ -154,7 +153,7 @@ header {
     position: fixed;
     top: 10%;
     left: 0;
-    padding: 20px;
+    padding: 40px;
     color: white;
     display: none;
 }
@@ -277,6 +276,13 @@ footer {
     text-align: center;
     padding: 2rem 0;
     font-size: 0.9rem;
+}
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 50px;
 }
 
 /* ---------------------------
