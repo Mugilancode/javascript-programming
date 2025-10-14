@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login & OTP Verification</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="changes.css">
+</head>
+<body>
+
+  <main class="page" aria-label="Authentication examples">
+
+    <!-- LOGIN CARD -->
+    <section class="card card--login" aria-labelledby="login-heading">
+      <header class="card__header">
+        <div class="card__icon">
+          <svg width="44" height="44" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.06)"/>
+            <path d="M32 20a8 8 0 00-8 8v2h16v-2a8 8 0 00-8-8z" fill="#fff" opacity=".92"/>
+            <rect x="24" y="34" width="16" height="14" rx="4" fill="#fff" opacity=".95"/>
+            <circle cx="32" cy="40" r="2" fill="#5b2c88"/>
+          </svg>
+        </div>
+        <div class="card__title" id="login-heading">Login</div>
+        <div class="muted" style="font-size:13px;">Enter your mobile number to receive OTP</div>
+      </header>
+
+      <div class="card__body">
+        <div class="phone">
+          <label class="label" for="phone">Mobile number</label>
+          <div class="phone__display">
+            <span>+91</span>
+            <span style="opacity:.45;">•</span>
+            <input type="number" id="phoneNum">
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:6px;">
+          <div class="muted">Verify Mobile Number Via</div>
+          <div class="method-buttons">
+            <button class="pill" id="callMethod">CALL</button>
+            <button class="pill pill--active" id="otpMethod">OTP</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" id="btnCall">Request Call</button>
+          <button class="btn btn--primary" id="btnGetOtp">Send OTP</button>
+        </div>
+
+        <div class="pager">
+          <span class="dot dot--active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="card__footer">
+        Don't have an account? <a href="#">REGISTER NOW</a>
+      </div>
+    </section>
+
+    <!-- OTP CARD -->
+    <section class="card card--otp" aria-labelledby="otp-heading">
+      <header class="card__header">
+        <div class="card__icon">
+          <svg width="44" height="44" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.06)"/>
+            <path d="M32 20a8 8 0 00-8 8v2h16v-2a8 8 0 00-8-8z" fill="#fff" opacity=".92"/>
+            <rect x="24" y="34" width="16" height="14" rx="4" fill="#fff" opacity=".95"/>
+            <circle cx="32" cy="40" r="2" fill="#5b2c88"/>
+          </svg>
+        </div>
+        <div class="card__title" id="otp-heading">Enter OTP</div>
+        <div class="muted" style="font-size:13px;">We have sent a 6 digit code to your mobile</div>
+      </header>
+
+      <div class="card__body" id="otpArea">
+        <div>
+          <label class="label" for="otp">One-time password</label>
+          <div class="otp">
+            <input class="otp__input" maxlength="1" inputmode="numeric">
+            <input class="otp__input" maxlength="1" inputmode="numeric">
+            <input class="otp__input" maxlength="1" inputmode="numeric">
+            <input class="otp__input" maxlength="1" inputmode="numeric">
+            <input class="otp__input" maxlength="1" inputmode="numeric">
+            <input class="otp__input" maxlength="1" inputmode="numeric">
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="link" id="btnCancel">Cancel</button>
+          <button class="btn btn--primary" id="btnLoginOtp">Login</button>
+        </div>
+
+        <div style="text-align:center; margin-top:6px;">
+          <button class="link" id="resendOtp">Resend OTP</button>
+        </div>
+
+        <div class="pager">
+          <span class="dot"></span>
+          <span class="dot dot--active"></span>
+        </div>
+      </div>
+
+      <div class="card__footer">
+        Don't have an account? <a href="#">REGISTER NOW</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Script -->
+  <script src="changes.js"></script>
+</body>
+</html>
